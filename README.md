@@ -55,16 +55,18 @@ Let's see which model is the slowest!
 
 4. Also generate a figure of the multiple sequence alignment `C1.png`. This can be done using many software applications, including the programs below
  
+ https://ormbunkar.se/aliview/
+
    https://www.ncbi.nlm.nih.gov/projects/msaviewer/
 
     https://www.ebi.ac.uk/Tools/msa/mview/
    
    
 
-5. For challenge 2, you must create your own XML file. Use the dataset `C2.fasta` in the root directory. The XML file should be called `C2.xml`.
+6. For challenge 2, you must create your own XML file. Use the dataset `C2.fasta` in the root directory. The XML file should be called `C2.xml`.
    Please also specify any BEAST 2 packages being used in `README.md`
    
-6. To submit the final results, please upload three files: `MY_NAME/C1.fasta`,  `MY_NAME/C1.png`, and `MY_NAME/C2.xml`:
+7. To submit the final results, please upload three files: `MY_NAME/C1.fasta`,  `MY_NAME/C1.png`, and `MY_NAME/C2.xml`:
    ```
    git add C1.fasta
    git add C1.png
@@ -74,7 +76,16 @@ Let's see which model is the slowest!
    git push
    ```
 
-7. After the competition ends, 10 replicates of each challenge will be run per person, and the results will be announced afterwards. The mean ESS/state of the posterior density, after a 50% burn-in, will be used. 
+8. After the competition ends, 10 replicates of each challenge will be run per person, and the results will be announced afterwards. The mean ESS/state of the posterior density, after a 50% burn-in, will be used. 
+
+
+## Dependencies
+
+- BEAST 2.7
+- R
+- Editing alignment can be done using a text editor, but it is very easy when using AliView.  It is recommended that you download AliView, or a similar program, beforehand https://ormbunkar.se/aliview/
+
+
 
 
    
