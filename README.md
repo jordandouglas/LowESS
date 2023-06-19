@@ -10,7 +10,7 @@ The two challenges in this competition share the same objective: find the condit
 
 ## Challenge 1: Dataset
 
-**Objective:** Create a nucleotide multiple sequence alignment, with 100 sites and 20 taxa, which gives the smallest ESS when run on `C1.xml`. 
+**Objective:** Create a nucleotide multiple sequence alignment, with 100 sites and 20 taxa, which gives the smallest ESS when run on `C1.xml` in BEAST 2. 
 This model consists of the Jukes-Cantor substitution model, a strict clock, and a Yule tree prior. 
 Do not edit the XML file.
 A benchmark dataset has been provided `benchmark.fasta` which can be used as a starting point to create a new alignment.
@@ -26,7 +26,7 @@ Strategies that may give a pathological dataset:
 
 ## Challenge 2: Model
 
-**Objective:** Create an XML file using any of the models available in any released BEAST 2 package available in beauti, such that the ESS is as small as possible when run on `benchmark.fasta`.  You must use this dataset (`benchmark.fasta`) and only this dataset. You cannot upload the dataset many times and use it in different partitions.  You also cannot change any of the operators or operator weights, and you cannot edit the XML file by hand. Set the chain length to 10 million states. Please ensure that the MCMC finishes in under 2 hours.
+**Objective:** Create a BEAST 2 XML file using any of the models available in any released BEAST 2 package available in beauti, such that the ESS is as small as possible when run on `benchmark.fasta`.  You must use this dataset (`benchmark.fasta`) and only this dataset. You cannot upload the dataset many times and use it in different partitions.  You also cannot change any of the operators or operator weights, and you cannot edit the XML file by hand. Set the chain length to 10 million states. Please ensure that the MCMC finishes in under 2 hours.
 
 Let's see which model is the slowest!
 
