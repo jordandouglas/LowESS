@@ -6,7 +6,7 @@
 The theme is to identify the conditions that make a Bayesian phylogenetic analysis converge  to equilibrium poorly during MCMC. This may arise from conflicting signals in the data, an over-specified or under-specified model, or it could simply be due to the existing MCMC proposal kernels being ill-equipped to traverse the posterior space efficiently. 
 
 
-The two challenges in this competition share the same objective: find the conditions which give the **smallest** effective sample size (ESS) per million states. 
+The two challenges in this competition share the same objective: find the conditions which give the **smallest** effective sample size (ESS) per million states. The ESS of the posterior density will be printed in the output and can also be measured in Tracer. 
 
 ## Challenge 1: Dataset
 
