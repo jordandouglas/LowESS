@@ -86,9 +86,10 @@ https://www.ebi.ac.uk/Tools/msa/mview/
    
    
 
-5. For challenge 2, create a new XML file from the `benchmark.fasta` dataset. The XML file should be called `C2.xml`. Please describe the model and specify any BEAST 2 packages being used in `README.md`
+5. For challenge 2, create a new XML file from the `benchmark.fasta` dataset. The XML file should be called `C2.xml`.
+6. In the README file, please include the Challenge 1 alignment figure, describe the model used for Challenge 2 as well as any BEAST 2 packages being (see `benchmark` directory for an example)
    
-6. To submit the final results, please upload four files: `MY_NAME/C1.fasta`,  `MY_NAME/C1.png`, `MY_NAME/C2.xml`, and `MY_NAME/README.md`. See the `benchmark` directory for an example of what the submission should look like
+7. To submit the final results, please upload four files: `MY_NAME/C1.fasta`,  `MY_NAME/C1.png`, `MY_NAME/C2.xml`, and `MY_NAME/README.md`.
    ```
    git add C1.fasta
    git add C1.png
@@ -98,7 +99,7 @@ https://www.ebi.ac.uk/Tools/msa/mview/
    git push
    ```
 
-7. After the competition ends, organiser will run 10 replicates of each challenge per person, and the results will be announced afterwards. The mean ESS/state of the posterior and likelihood densities, after a 10% burn-in, will be used. 
+8. After the competition ends, organiser will run 10 replicates of each challenge per person, and the results will be announced afterwards. The mean ESS/state of the posterior and likelihood densities, after a 10% burn-in, will be used. 
 
 
 ## Dependencies
