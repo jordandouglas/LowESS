@@ -3,20 +3,20 @@
 *Monday 3 July, 2023*
 
 
-The theme is to identify the conditions that make a Bayesian phylogenetic configuration poorly converge to equilibrium during MCMC. This may arise from conflicting signals in the data, an over-specified or under-specified model, or it could simply be due to the existing MCMC proposal kernels being ill-equipped to traverse the posterior space efficiently. 
+The theme is to identify the conditions that make a Bayesian phylogenetic configuration inept at convergence during MCMC. This may arise from conflicting signals in the data, an over-specified or under-specified model, or it could simply be due to the existing MCMC proposal kernels being ill-equipped to traverse the posterior space efficiently. 
 
 
-The two challenges in this competition share the same objective: find the conditions which give the **smallest** effective sample size (ESS) per million states. The ESS of the posterior density will be printed in the output and can also be measured in Tracer. 
+The two challenges in this competition share the same objective: find the conditions which give the **smallest** effective sample size (ESS) per million states. 
 
 
 ## The benchmark
 
 
-The benchmark dataset and model attained an ESS of 775 (standard error: 25) on the posterior density, and 762 (44) on likelihood.
+The benchmark dataset and model attained an ESS of 775 (standard error: 25) on the posterior density, and 762 (44) on the likelihood.
 These numbers were attained from running the full MCMC chain across 10 replicates with a 10% burn-in. 
 The maximum possible ESS on a chain of this length is 901.
 
-Can you do worse than the benchmark? 
+**Can you do worse than the benchmark?**
 
 
 
@@ -47,7 +47,7 @@ Strategies that may give a pathological dataset:
 Rules: 
 1. Set the chain length to 10 million states and log every 10,000 states. 
 2. The dataset in `benchmark.fasta`, and only this dataset, may be used. It must be used as a nucleotide alignment (not as amino acid), however tip date or location data may be included. Do not upload the dataset many times and use it in different partitions.
-3. Do not change any of the operators or operator weights from the beauti/LPhy defaults, and do not edit the XML file by hand.  
+3. Do not change any of the operators or operator weights from the beauti/LPhy defaults, and do not edit the XML file by hand (except for adding new loggables, like ESS).
 4. The MCMC chain must finish in under 20 minutes, so the time per million samples should be less than 2 minutes (2min/Msamples printed on the screen output).
 
 
