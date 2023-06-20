@@ -42,13 +42,13 @@ Strategies that may give a pathological dataset:
 
 ## Challenge 2: Model
 
-**Objective:** Create a BEAST 2 XML file using any of the models available in any released BEAST 2 package available in beauti, such that the ESS is as small as possible when run on `benchmark.fasta`.
+**Objective:** Create a BEAST 2 XML file using any of the models available in any released BEAST 2 packages, such that the ESS is as small as possible when run on `benchmark.fasta`.
 
 Rules: 
 1. Set the chain length to 10 million states and log every 10,000 states. 
-2. The dataset in `benchmark.fasta`, and only this dataset, may be used. It must be used as a nucleotide alignment (not as amino acid), however tip date or location data may be included. Do not upload the dataset many times and use it in different partitions. 
-3. Do not change any of the operators or operator weights, or edit the XML file by hand.  
-4. The MCMC chain must finish in under 20 minutes, so the time per million samples should be less than 2 minutes (2min/Msamples printed on the screen output)
+2. The dataset in `benchmark.fasta`, and only this dataset, may be used. It must be used as a nucleotide alignment (not as amino acid), however tip date or location data may be included. Do not upload the dataset many times and use it in different partitions.
+3. Do not change any of the operators or operator weights from the beauti/LPhy defaults, and do not edit the XML file by hand.  
+4. The MCMC chain must finish in under 20 minutes, so the time per million samples should be less than 2 minutes (2min/Msamples printed on the screen output).
 
 
 Let's see which model is the slowest!
