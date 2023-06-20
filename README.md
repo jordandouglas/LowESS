@@ -8,6 +8,18 @@ The theme is to identify the conditions that make a Bayesian phylogenetic analys
 
 The two challenges in this competition share the same objective: find the conditions which give the **smallest** effective sample size (ESS) per million states. The ESS of the posterior density will be printed in the output and can also be measured in Tracer. 
 
+
+## The benchmark
+
+
+The benchmark dataset and model attained an ESS of 775 (standard error: 25) on the posterior density, and 762 (44) on likelihood.
+These numbers were attained from running the full MCMC chain across 10 replicates with a 10% burn-in. 
+The maximum possible ESS on a chain of this length is 901.
+
+Can you do worse than the benchmark? 
+
+
+
 ## Challenge 1: Dataset
 
 **Objective:** Create a nucleotide multiple sequence alignment, with 100 sites and 20 taxa, which gives the smallest ESS when run on `C1.xml` in BEAST 2. 
@@ -24,9 +36,20 @@ Strategies that may give a pathological dataset:
 5. Anything else?
 
 
+
+
+
+
 ## Challenge 2: Model
 
-**Objective:** Create a BEAST 2 XML file using any of the models available in any released BEAST 2 package available in beauti, such that the ESS is as small as possible when run on `benchmark.fasta`.  You must use this dataset (`benchmark.fasta`) and only this dataset. You cannot upload the dataset many times and use it in different partitions.  You also cannot change any of the operators or operator weights, and you cannot edit the XML file by hand. Set the chain length to 10 million states. Please ensure that the MCMC finishes in under 2 hours.
+**Objective:** Create a BEAST 2 XML file using any of the models available in any released BEAST 2 package available in beauti, such that the ESS is as small as possible when run on `benchmark.fasta`.
+
+Rules: 
+1. Set the chain length to 10 million states and log every 10,000 states. 
+2. The dataset in `benchmark.fasta`, and only this dataset, may be used. It must be used as a nucleotide alignment (not as amino acid), however tip date or location data may be included. Do not upload the dataset many times and use it in different partitions. 
+3. Do not change any of the operators or operator weights, or edit the XML file by hand.  
+4. The MCMC chain must finish in under 20 minutes, so the time per million samples should be less than 2 minutes (2min/Msamples printed on the screen output)
+
 
 Let's see which model is the slowest!
 
@@ -76,7 +99,7 @@ Let's see which model is the slowest!
    git push
    ```
 
-8. After the competition ends, 10 replicates of each challenge will be run per person, and the results will be announced afterwards. The mean ESS/state of the posterior density, after a 50% burn-in, will be used. 
+8. After the competition ends, 10 replicates of each challenge will be run per person, and the results will be announced afterwards. The mean ESS/state of the posterior and likelihood densities, after a 10% burn-in, will be used. 
 
 
 ## Dependencies
