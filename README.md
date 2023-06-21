@@ -3,7 +3,7 @@
 *Monday 3 July, 2023*
 
 
-The theme is to identify the conditions that make a Bayesian phylogenetic configuration inept at convergence during MCMC. This may arise from conflicting signals in the data, an over-specified or under-specified model, or it could simply be due to the existing MCMC proposal kernels being ill-equipped to traverse the posterior space efficiently. 
+The aim is to identify the conditions that make a Bayesian phylogenetic configuration inept at convergence during MCMC. This may arise from conflicting signals in the data, an over-specified or under-specified model, or it could simply be due to the existing MCMC proposal kernels being ill-equipped to traverse the posterior space efficiently. 
 
 
 The two challenges in this competition share the same objective: find the conditions which give the **smallest** effective sample size (ESS) per million states. 
@@ -13,7 +13,7 @@ The two challenges in this competition share the same objective: find the condit
 
 
 The benchmark dataset and model attained an ESS of 775 (standard error: 25) on the posterior density, and 762 (44) on the likelihood.
-These numbers were attained from running the full MCMC chain across 10 replicates with a 10% burn-in. 
+These numbers were calculated from running the full MCMC chain across 10 replicates with a 10% burn-in. 
 The maximum possible ESS on a chain of this length is 901.
 
 **Can you do worse than the benchmark?**
@@ -99,12 +99,30 @@ https://www.ebi.ac.uk/Tools/msa/mview/
    git push
    ```
 
-8. After the competition ends, organiser will run 10 replicates of each challenge per person, and the results will be announced afterwards. The mean ESS/state of the posterior and likelihood densities, after a 10% burn-in, will be used. 
+8. After the competition ends, organiser will run 10 replicates of each challenge per person, and the results will be announced afterwards. The mean ESS/state of the posterior and likelihood densities (which ever is smaller across the 10 independent chains, or the 10 chains combined) will be used (10% burn-in).
+
+
+## Calculating ESS
+
+The ESS can be caluclated using Tracer.
+
+For Challenge 1, the ESS of the posterior and likelihoods are printed in the output (screen logger), for convenience,
+
+For Challenge 2, you may want to edit the XML file to give the following screen logger so that the ESSes will be printed to the terminal output:
+
+```
+<logger id="screenlog" spec="Logger" logEvery="10000">
+    <ESS spec='ESS' name='log' arg="@posterior"/>
+    <ESS spec='ESS' name='log' arg="@likelihood"/>
+</logger>
+```
+
 
 
 ## Dependencies
 
 - BEAST 2.7
+- Tracer
 - R
 - Editing alignment can be done using a text editor, but it is very easy when using AliView.  It is recommended that you download AliView, or a similar program, beforehand https://ormbunkar.se/aliview/
 
