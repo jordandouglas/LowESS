@@ -73,9 +73,7 @@ name="alignment">
                         <parameter id="mutationRate.s:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.0" name="mutationRate">1.0</parameter>
                         <parameter id="gammaShape.s:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.1" name="shape">1.0</parameter>
                         <parameter id="proportionInvariant.s:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
-                        <substModel id="Standard_JC.s:benchmark" spec="substmodels.nucleotide.JC">
-                            <parameter id="JCrates.s:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rates">1.0</parameter>
-                        </substModel>
+                        <substModel id="Standard_JC.s:benchmark" spec="JukesCantor" />
                     </siteModel>
                     <branchRateModel id="StrictClock.c:benchmark" spec="beast.base.evolution.branchratemodel.StrictClockModel">
                         <parameter id="clockRate.c:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.0" name="clock.rate">1.0</parameter>
