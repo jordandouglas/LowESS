@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.base.evolution.alignment:beast.pkgmgmt:beast.base.core:beast.base.inference:beast.base.evolution.tree.coalescent:beast.pkgmgmt:beast.base.core:beast.base.inference.util:beast.evolution.nuc:beast.base.evolution.operator:beast.base.inference.operator:beast.base.evolution.sitemodel:beast.base.evolution.substitutionmodel:beast.base.evolution.likelihood" required="BEAST.base v2.7.5:Mascot v3.0.0:bModelTest v1.3.3:CorrelatedTrait v0.0.5" version="2.7">
+
+    <data
+id="benchmark"
+spec="Alignment"
+name="alignment">
+        <sequence id="seq_Abi" spec="Sequence" taxon="Abi" totalcount="4" value="gatggacatcaagaagccccagaggtcgaggaagctgaaactgtgtatggaagtccaccacaacaagaaaagttacttgtattgggtggaaatggatttg"/>
+        <sequence id="seq_Aco" spec="Sequence" taxon="Aco" totalcount="4" value="agtaagctagatgagccatttaaagttgaggaagcagaaacagtaaacgtgccgccacccccgtcagaaaaattgcttgttttgggcggaaatggatttg"/>
+        <sequence id="seq_Ame" spec="Sequence" taxon="Ame" totalcount="4" value="gatggtcacgaagaacccccaaaggttgaggaagctgaaactgtgcatgaaattcctccccatcaagataagttacttgttttgggtggaaacgggtttg"/>
+        <sequence id="seq_Ara" spec="Sequence" taxon="Ara" totalcount="4" value="gatggtcaccaagaatccccaaaggttgaagaagctgaaactgtgcacgaaagtccacctcatcaagataggttacttgtattgggtggaaacggatttg"/>
+        <sequence id="seq_Ath" spec="Sequence" taxon="Ath" totalcount="4" value="aacaaaattgatgagcccttcaatgtggaagaagctgagactgtacatgtgcctccacctcctactgagaagctgcttgtcctgggaggaaatggttttg"/>
+        <sequence id="seq_Atr" spec="Sequence" taxon="Atr" totalcount="4" value="gatcacattgaagaacccgtgaaagttgaagaagcagaaacagtaaatgttttgccacctccgtcagagaagctactagtgttgggtggaaatggatttg"/>
+        <sequence id="seq_Bdi" spec="Sequence" taxon="Bdi" totalcount="4" value="gggcgggtggacgagcctttcaaggtcgaggaggcagaacccgtcaaggtgcctccgccttctccggataagttgcttgtgctaggtggaagtggtttcg"/>
+        <sequence id="seq_Cep" spec="Sequence" taxon="Cep" totalcount="4" value="gatggtcatgaagaaccgcccaaggttgaggaagctgaaactgtgcatgaaagtccatcccatctagataagttacttgtattgggtggaaacggatttg"/>
+        <sequence id="seq_Cga" spec="Sequence" taxon="Cga" totalcount="4" value="aatactgtaggaaaggaaagtaaggattcaagtgcagacatgaaatcctctgaacccacggaacgaaacaagctgcttattttgggtggaagtggttttg"/>
+        <sequence id="seq_Cun" spec="Sequence" taxon="Cun" totalcount="4" value="gatggttacagagaaccaccaaaagttgaggaggctgaaactgtaaatgaaagtccatctcatcaagacaagttacttgtattaggcggaaatgggtttg"/>
+        <sequence id="seq_Cyc" spec="Sequence" taxon="Cyc" totalcount="4" value="gatgtgcagcaagcttccacaacagttgaggaagcagaaaccgttgatgtaaagccaccggaacatgataagttgcttgtattgggaggaaatggatttg"/>
+        <sequence id="seq_Eph" spec="Sequence" taxon="Eph" totalcount="4" value="gatggacagaaaggtacaccagaagttaatgaagctgagactgtttttacttcacctccccaaccagaaaagctgcttgtgctaggtggaagtggatttg"/>
+        <sequence id="seq_Fok" spec="Sequence" taxon="Fok" totalcount="4" value="gatggttacaaagaaccaccaaaagttgaggaagctgagactgtgcatgaaagtccatctcatcaagacaagttacttgtattaggtggaaatggttttg"/>
+        <sequence id="seq_Gin" spec="Sequence" taxon="Gin" totalcount="4" value="gatgcaaatcgagaatcgccaaaggttgaggaagcagaaactgtgtatgtaaagcaaccagatcaagataagttacttgtattgggtggaaatggattcg"/>
+        <sequence id="seq_Gma" spec="Sequence" taxon="Gma" totalcount="4" value="aacaaagttgatgggccattcaaagttgaagaagcagagactgtaaatgtgcctccactcccaacagaaaagttgcttgtgttgggagggaatgggtttg"/>
+        <sequence id="seq_Gne" spec="Sequence" taxon="Gne" totalcount="4" value="aatgcacataaagaagagtcggtaacagaagaagctgaaactctgtatgagcctcctccacagcaagagaagcttgtcgtgttaggtggaaatggctttg"/>
+        <sequence id="seq_Lja" spec="Sequence" taxon="Lja" totalcount="4" value="gacgcctcatcgtcaccatcatcgacggggagcgcagatacaaag---------cctgaggaaagaaacaagctgcttgtgttgggtggcagtgggtttg"/>
+        <sequence id="seq_Ltu" spec="Sequence" taxon="Ltu" totalcount="4" value="agtaaggtagatgaacccttcaaagttgaggaagcagagacagtaaacatgcctccacctccatcagagaagttacttgttttgggcggaaatgggtttg"/>
+        <sequence id="seq_Mac" spec="Sequence" taxon="Mac" totalcount="4" value="aatcgtgtagatgagcctcttaaagtggaggaagcagaaacggtaaaagcacctcctcctccatcagagaagctccttgtattgggtggtaatggatttg"/>
+        <sequence id="seq_Met" spec="Sequence" taxon="Met" totalcount="4" value="gatggttacaaagaaccaccaaaagttgaggaagctgagactgtgcatgaaattccatctcatcaagacaagttacttgtactaggcggaaatggttttg"/>
+    </data>
+
+    <map name="Uniform" >beast.base.inference.distribution.Uniform</map>
+
+    <map name="Exponential" >beast.base.inference.distribution.Exponential</map>
+
+    <map name="LogNormal" >beast.base.inference.distribution.LogNormalDistributionModel</map>
+
+    <map name="Normal" >beast.base.inference.distribution.Normal</map>
+
+    <map name="Beta" >beast.base.inference.distribution.Beta</map>
+
+    <map name="Gamma" >beast.base.inference.distribution.Gamma</map>
+
+    <map name="LaplaceDistribution" >beast.base.inference.distribution.LaplaceDistribution</map>
+
+    <map name="prior" >beast.base.inference.distribution.Prior</map>
+
+    <map name="InverseGamma" >beast.base.inference.distribution.InverseGamma</map>
+
+    <map name="OneOnX" >beast.base.inference.distribution.OneOnX</map>
+
+    <run id="mcmc" spec="MCMC" chainLength="10000000">
+        <state id="state" spec="State" storeEvery="5000">
+            <tree id="Tree.t:benchmark" spec="beast.base.evolution.tree.Tree" name="stateNode">
+                <taxonset id="TaxonSet.benchmark" spec="TaxonSet">
+                    <alignment idref="benchmark"/>
+                </taxonset>
+            </tree>
+            <stateNode id="BMT_ModelIndicator.s:benchmark" spec="parameter.IntegerParameter" lower="0" upper="5">5</stateNode>
+            <parameter id="BMT_Rates.s:benchmark" spec="parameter.RealParameter" dimension="6" lower="0.01" name="stateNode" upper="100.0">1.0</parameter>
+            <parameter id="BMT_gammaShape.s:benchmark" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+            <parameter id="BMT_ProportionInvariable.s:benchmark" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.1</parameter>
+            <stateNode id="hasInvariableSites.s:benchmark" spec="parameter.IntegerParameter">1</stateNode>
+            <stateNode id="hasGammaRates.s:benchmark" spec="parameter.IntegerParameter">1</stateNode>
+            <stateNode id="hasEqualFreqs.s:benchmark" spec="parameter.BooleanParameter">false</stateNode>
+            <parameter id="BMT_frequencies.s:benchmark" spec="parameter.RealParameter" dimension="4" name="stateNode">0.25 0.25 0.25 0.25</parameter>
+            <parameter id="rateValues.s:benchmark" spec="parameter.RealParameter" dimension="8" lower="0.0" name="stateNode">1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0</parameter>
+            <stateNode id="groupings.s:benchmark" spec="parameter.IntegerParameter" dimension="8" lower="0" upper="2">0 2 1 0 0 0 0 0</stateNode>
+            <stateNode id="sizes.s:benchmark" spec="parameter.IntegerParameter" dimension="8">6 1 1 0 0 0 0 0</stateNode>
+            <parameter id="NeConstant.t:benchmark" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="migrationConstant.t:benchmark" spec="parameter.RealParameter" dimension="0" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="parameter.hyperNormal-mean-FokMet.prior" spec="parameter.RealParameter" name="stateNode">10.0</parameter>
+            <parameter id="clockRate.c:benchmark" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        </state>
+        <init id="RandomTree.t:benchmark" spec="RandomTree" estimate="false" initial="@Tree.t:benchmark" taxa="@benchmark">
+            <populationModel id="ConstantPopulation0.t:benchmark" spec="ConstantPopulation">
+                <parameter id="randomPopSize.t:benchmark" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+            </populationModel>
+        </init>
+        <distribution id="posterior" spec="CompoundDistribution">
+            <distribution id="prior" spec="CompoundDistribution">
+                <distribution id="Mascot.t:benchmark" spec="mascot.distribution.Mascot" tree="@Tree.t:benchmark">
+                    <dynamics id="Constant.t:benchmark" spec="mascot.dynamics.Constant" Ne="@NeConstant.t:benchmark" backwardsMigration="@migrationConstant.t:benchmark" dimension="1">
+                        <typeTrait id="typeTraitSet.t:benchmark" spec="mascot.util.InitializedTraitSet" traitname="type" value="Abi=A,Aco=A,Ame=A,Ara=A,Ath=A,Atr=A,Bdi=B,Cep=C,Cga=C,Cun=C,Cyc=C,Eph=E,Fok=F,Gin=G,Gma=G,Gne=G,Lja=L,Ltu=L,Mac=M,Met=M">
+                            <taxa id="TaxonSet.2" spec="TaxonSet" alignment="@benchmark"/>
+                        </typeTrait>
+                    </dynamics>
+                    <structuredTreeIntervals id="StructuredTreeIntervals.t:benchmark" spec="mascot.distribution.StructuredTreeIntervals" tree="@Tree.t:benchmark"/>
+                </distribution>
+                <distribution id="BMT_PropInvariablePrior.s:benchmark" spec="bmodeltest.math.distributions.BMTPrior" count="@hasInvariableSites.s:benchmark" x="@BMT_ProportionInvariable.s:benchmark">
+                    <Beta id="Beta.0" name="distr">
+                        <alpha id="Function$Constant.0" spec="Function$Constant" value="1.0"/>
+                        <beta id="Function$Constant.1" spec="Function$Constant" value="4.0"/>
+                    </Beta>
+                </distribution>
+                <distribution id="BMT_RatesPrior.s:benchmark" spec="bmodeltest.math.distributions.NucleotideRevJumpSubstModelRatePrior" modelIndicator="@BMT_ModelIndicator.s:benchmark" x="@BMT_Rates.s:benchmark">
+                    <substModel id="RevJump.s:benchmark" spec="bmodeltest.evolution.substitutionmodel.NucleotideRevJumpSubstModel" modelIndicator="@BMT_ModelIndicator.s:benchmark" rates="@BMT_Rates.s:benchmark">
+                        <frequencies id="BMTfreqs.s:benchmark" spec="bmodeltest.evolution.substitutionmodel.ModelFrequencies" empirical="false" frequencies="@BMT_frequencies.s:benchmark" hasEqualFreqs="@hasEqualFreqs.s:benchmark"/>
+                    </substModel>
+                    <Exponential id="BMT_RatesPrior.s:benchmarkx" name="distr"/>
+                </distribution>
+                <prior id="BMT_freqsPrior.s:benchmark" name="distribution" x="@BMT_frequencies.s:benchmark">
+                    <distr id="Dirichlet.0" spec="distribution.Dirichlet">
+                        <alpha id="Function$Constant.2" spec="Function$Constant" value="1.0 1.0 1.0 1.0"/>
+                    </distr>
+                </prior>
+                <distribution id="BMT_GammaShapePrior.s:benchmark" spec="bmodeltest.math.distributions.BMTPrior" count="@hasGammaRates.s:benchmark" x="@BMT_gammaShape.s:benchmark">
+                    <Exponential id="Exponential.1" name="distr">
+                        <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" lower="0.0" name="mean" upper="0.0">1.0</parameter>
+                    </Exponential>
+                </distribution>
+                <prior id="NeConstantPrior.t:benchmark" name="distribution" x="@NeConstant.t:benchmark">
+                    <Exponential id="Exponential.2" name="distr">
+                        <mean id="Function$Constant.30" spec="Function$Constant" value="1.0"/>
+                    </Exponential>
+                </prior>
+                <prior id="migrationConstantPrior.t:benchmark" name="distribution" x="@migrationConstant.t:benchmark">
+                    <Exponential id="Exponential.3" name="distr">
+                        <mean id="Function$Constant.31" spec="Function$Constant" value="1.0"/>
+                    </Exponential>
+                </prior>
+                <prior id="HyperPrior.hyperNormal-mean-FokMet.prior" name="distribution" x="@parameter.hyperNormal-mean-FokMet.prior">
+                    <OneOnX id="OneOnX.19" name="distr"/>
+                </prior>
+                <distribution id="FokMet.prior" spec="beast.base.evolution.tree.MRCAPrior" monophyletic="true" tree="@Tree.t:benchmark">
+                    <taxonset id="FokMet" spec="TaxonSet">
+                        <taxon id="Fok" spec="Taxon"/>
+                        <taxon id="Met" spec="Taxon"/>
+                    </taxonset>
+                    <Normal id="Normal.3" mean="@parameter.hyperNormal-mean-FokMet.prior" name="distr">
+                        <parameter id="RealParameter.113" spec="parameter.RealParameter" estimate="false" name="sigma">1.0</parameter>
+                    </Normal>
+                </distribution>
+                <prior id="ClockPrior.c:benchmark" name="distribution" x="@clockRate.c:benchmark">
+                    <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
+                </prior>
+            </distribution>
+            <distribution id="likelihood" spec="CompoundDistribution" useThreads="true">
+                <distribution id="treeLikelihood.benchmark" spec="ThreadedTreeLikelihood" data="@benchmark" tree="@Tree.t:benchmark">
+                    <siteModel id="BEASTModelTest.s:benchmark" spec="bmodeltest.evolution.sitemodel.BEASTModelTestSiteModel" gammaCategoryCount="4" hasGammaRates="@hasGammaRates.s:benchmark" hasInvariantSites="@hasInvariableSites.s:benchmark" proportionInvariant="@BMT_ProportionInvariable.s:benchmark" shape="@BMT_gammaShape.s:benchmark" substModel="@RevJump.s:benchmark">
+                        <parameter id="BMT_mutationRate.s:benchmark" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    </siteModel>
+                    <branchRateModel id="StrictClock.c:benchmark" spec="beast.base.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:benchmark"/>
+                </distribution>
+            </distribution>
+            <distribution id="fossilCalibrations" spec="CompoundDistribution"/>
+        </distribution>
+        <operator id="BMT_ModelTestOperator.s:benchmark" spec="bmodeltest.evolution.operators.BMTMergeSplitOperator" modelIndicator="@BMT_ModelIndicator.s:benchmark" rates="@BMT_Rates.s:benchmark" substModel="@RevJump.s:benchmark" weight="1.0"/>
+        <operator id="BMT_Ratescaler.s:benchmark" spec="bmodeltest.evolution.operators.BMTExchangeOperator" delta="0.15" modelIndicator="@BMT_ModelIndicator.s:benchmark" rates="@BMT_Rates.s:benchmark" substModel="@RevJump.s:benchmark" weight="1.0"/>
+        <operator id="BMT_gammaShapeScaler.s:benchmark" spec="bmodeltest.evolution.operators.BMTScaleOperator" count="@hasGammaRates.s:benchmark" parameter="@BMT_gammaShape.s:benchmark" scaleFactor="0.5" weight="0.5"/>
+        <operator id="BMT_ProportionInvariableScaler.s:benchmark" spec="bmodeltest.evolution.operators.BMTScaleOperator" count="@hasInvariableSites.s:benchmark" parameter="@BMT_ProportionInvariable.s:benchmark" scaleFactor="0.5" weight="0.5"/>
+        <operator id="BMT_hasGammaRatesFlipper.s:benchmark" spec="bmodeltest.evolution.operators.BMTBirthDeathOperator" count="@hasGammaRates.s:benchmark" rates="@BMT_gammaShape.s:benchmark" weight="0.1"/>
+        <operator id="BMT_hasInvariableSitesFlipper.s:benchmark" spec="bmodeltest.evolution.operators.BMTBirthDeathOperator" count="@hasInvariableSites.s:benchmark" rates="@BMT_ProportionInvariable.s:benchmark" weight="0.1"/>
+        <operator id="BMT_FreqsFlipOperator.s:benchmark" spec="operator.BitFlipOperator" parameter="@hasEqualFreqs.s:benchmark" weight="0.1"/>
+        <operator id="BMT_FrequenciesExchanger.s:benchmark" spec="operator.kernel.BactrianDeltaExchangeOperator" delta="0.01" weight="0.2">
+            <parameter idref="BMT_frequencies.s:benchmark"/>
+        </operator>
+        <operator id="Merger.t:benchmark" spec="correlatedtrait.evolution.operators.MergeOperator" groupings="@groupings.s:benchmark" parameters="@rateValues.s:benchmark" sizes="@sizes.s:benchmark" weight="10.0"/>
+        <operator id="Splitter.t:benchmark" spec="correlatedtrait.evolution.operators.SplitOperator" groupings="@groupings.s:benchmark" parameters="@rateValues.s:benchmark" sizes="@sizes.s:benchmark" weight="10.0"/>
+        <operator id="Exchange.t:benchmark" spec="operator.DeltaExchangeOperator" weight="10.0" weightvector="@sizes.s:benchmark">
+            <parameter idref="rateValues.s:benchmark"/>
+        </operator>
+        <operator id="MascotBICEPSEpochTop.t:benchmark" spec="EpochFlexOperator" scaleFactor="0.1" tree="@Tree.t:benchmark" weight="2.0"/>
+        <operator id="MascotBICEPSEpochAll.t:benchmark" spec="EpochFlexOperator" fromOldestTipOnly="false" scaleFactor="0.1" tree="@Tree.t:benchmark" weight="2.0"/>
+        <operator id="MascotBICEPSTreeFlex.t:benchmark" spec="TreeStretchOperator" scaleFactor="0.01" tree="@Tree.t:benchmark" weight="2.0"/>
+        <operator id="MascotTreeRootScaler.t:benchmark" spec="kernel.BactrianScaleOperator" rootOnly="true" scaleFactor="0.1" tree="@Tree.t:benchmark" upper="10.0" weight="3.0"/>
+        <operator id="MascotUniformOperator.t:benchmark" spec="kernel.BactrianNodeOperator" tree="@Tree.t:benchmark" weight="30.0"/>
+        <operator id="MascotSubtreeSlide.t:benchmark" spec="kernel.BactrianSubtreeSlide" tree="@Tree.t:benchmark" weight="15.0"/>
+        <operator id="MascotNarrow.t:benchmark" spec="Exchange" tree="@Tree.t:benchmark" weight="0.0"/>
+        <operator id="MascotWide.t:benchmark" spec="Exchange" isNarrow="false" tree="@Tree.t:benchmark" weight="3.0"/>
+        <operator id="MascotWilsonBalding.t:benchmark" spec="WilsonBalding" tree="@Tree.t:benchmark" weight="3.0"/>
+        <operator id="NeConstantScaler.t:benchmark" spec="ScaleOperator" parameter="@NeConstant.t:benchmark" weight="3.0"/>
+        <operator id="migrationConstantScaler.t:benchmark" spec="ScaleOperator" parameter="@migrationConstant.t:benchmark" weight="3.0"/>
+        <operator id="StrictClockRateScaler.c:benchmark" spec="AdaptableOperatorSampler" weight="1.5">
+            <parameter idref="clockRate.c:benchmark"/>
+            <operator id="AVMNOperator.benchmark" spec="kernel.AdaptableVarianceMultivariateNormalOperator" allowNonsense="true" beta="0.05" burnin="400" initial="800" weight="0.1">
+                <transformations id="AVMNSumTransform.benchmark" spec="operator.kernel.Transform$LogConstrainedSumTransform"/>
+                <transformations id="AVMNLogTransform.benchmark" spec="operator.kernel.Transform$LogTransform">
+                    <f idref="clockRate.c:benchmark"/>
+                </transformations>
+                <transformations id="AVMNNoTransform.benchmark" spec="operator.kernel.Transform$NoTransform">
+                    <f idref="Tree.t:benchmark"/>
+                </transformations>
+            </operator>
+            <operator id="StrictClockRateScalerX.c:benchmark" spec="kernel.BactrianScaleOperator" parameter="@clockRate.c:benchmark" upper="10.0" weight="3.0"/>
+        </operator>
+        <operator id="strictClockUpDownOperator.c:benchmark" spec="AdaptableOperatorSampler" weight="1.5">
+            <parameter idref="clockRate.c:benchmark"/>
+            <tree idref="Tree.t:benchmark"/>
+            <operator idref="AVMNOperator.benchmark"/>
+            <operator id="strictClockUpDownOperatorX.c:benchmark" spec="operator.kernel.BactrianUpDownOperator" scaleFactor="0.75" weight="3.0">
+                <up idref="clockRate.c:benchmark"/>
+                <down idref="Tree.t:benchmark"/>
+            </operator>
+        </operator>
+        <operator id="hyperScaler.hyperNormal-mean-FokMet.prior" spec="ScaleOperator" parameter="@parameter.hyperNormal-mean-FokMet.prior" scaleFactor="0.5" weight="0.1"/>
+        <logger id="tracelog" spec="Logger" fileName="$(filebase).log" logEvery="10000" model="@posterior" sanitiseHeaders="true" sort="smart">
+            <log idref="posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+            <log idref="treeLikelihood.benchmark"/>
+            <log id="TreeHeight.t:benchmark" spec="beast.base.evolution.tree.TreeStatLogger" tree="@Tree.t:benchmark"/>
+            <log idref="RevJump.s:benchmark"/>
+            <log idref="BMT_ModelIndicator.s:benchmark"/>
+            <log idref="BMT_gammaShape.s:benchmark"/>
+            <log idref="BMT_ProportionInvariable.s:benchmark"/>
+            <log idref="hasGammaRates.s:benchmark"/>
+            <log idref="hasInvariableSites.s:benchmark"/>
+            <log id="ActivePropInvariable.s:benchmark" spec="bmodeltest.evolution.substitutionmodel.ActiveLogger" mask="@hasInvariableSites.s:benchmark" parameter="@BMT_ProportionInvariable.s:benchmark"/>
+            <log id="ActiveGammaShape.s:benchmark" spec="bmodeltest.evolution.substitutionmodel.ActiveLogger" mask="@hasGammaRates.s:benchmark" parameter="@BMT_gammaShape.s:benchmark"/>
+            <log idref="hasEqualFreqs.s:benchmark"/>
+            <log idref="BMT_frequencies.s:benchmark"/>
+            <log idref="Mascot.t:benchmark"/>
+            <log idref="Constant.t:benchmark"/>
+            <log idref="FokMet.prior"/>
+            <log idref="clockRate.c:benchmark"/>
+            <log idref="parameter.hyperNormal-mean-FokMet.prior"/>
+            <log idref="HyperPrior.hyperNormal-mean-FokMet.prior"/>
+        </logger>
+        <logger id="screenlog" spec="Logger" logEvery="10000">
+            <log idref="posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+        </logger>
+        <logger id="treelog.t:benchmark" spec="Logger" fileName="$(filebase)-$(tree).trees" logEvery="10000" mode="tree">
+            <log id="TreeWithMetaDataLogger.t:benchmark" spec="beast.base.evolution.TreeWithMetaDataLogger" tree="@Tree.t:benchmark"/>
+        </logger>
+        <logger id="typedTreelogger.t:benchmark" spec="Logger" fileName="$(filebase).$(tree).trees" logEvery="10000" mode="tree">
+            <log id="structuredTreelog.t:benchmark" spec="mascot.logger.StructuredTreeLogger" mascot="@Mascot.t:benchmark"/>
+        </logger>
+        <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+    </run>
+
+</beast>
