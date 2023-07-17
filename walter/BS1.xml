@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.base.evolution.alignment:beast.pkgmgmt:beast.base.core:beast.base.inference:beast.base.evolution.tree.coalescent:beast.pkgmgmt:beast.base.core:beast.base.inference.util:beast.evolution.nuc:beast.base.evolution.operator:beast.base.inference.operator:beast.base.evolution.sitemodel:beast.base.evolution.substitutionmodel:beast.base.evolution.likelihood" required="BEAST.base v2.7.4:SSM v1.2.0" version="2.7">
+
+    <data
+id="benchmark"
+spec="Alignment"
+name="alignment">
+        $(data)
+    </data>
+
+    <map name="Uniform" >beast.base.inference.distribution.Uniform</map>
+
+    <map name="Exponential" >beast.base.inference.distribution.Exponential</map>
+
+    <map name="LogNormal" >beast.base.inference.distribution.LogNormalDistributionModel</map>
+
+    <map name="Normal" >beast.base.inference.distribution.Normal</map>
+
+    <map name="Beta" >beast.base.inference.distribution.Beta</map>
+
+    <map name="Gamma" >beast.base.inference.distribution.Gamma</map>
+
+    <map name="LaplaceDistribution" >beast.base.inference.distribution.LaplaceDistribution</map>
+
+    <map name="prior" >beast.base.inference.distribution.Prior</map>
+
+    <map name="InverseGamma" >beast.base.inference.distribution.InverseGamma</map>
+
+    <map name="OneOnX" >beast.base.inference.distribution.OneOnX</map>
+
+    <run id="mcmc" spec="MCMC" chainLength="10000000">
+        <state id="state" spec="State" storeEvery="5000">
+            <tree id="Tree.t:benchmark" spec="beast.base.evolution.tree.Tree" name="stateNode">
+                <taxonset id="TaxonSet.benchmark" spec="TaxonSet">
+                    <alignment idref="benchmark"/>
+                </taxonset>
+            </tree>
+            <parameter id="birthRate.t:benchmark" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        </state>
+        <init id="RandomTree.t:benchmark" spec="RandomTree" estimate="false" initial="@Tree.t:benchmark" taxa="@benchmark">
+            <populationModel id="ConstantPopulation0.t:benchmark" spec="ConstantPopulation">
+                <parameter id="randomPopSize.t:benchmark" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+            </populationModel>
+        </init>
+        <distribution id="posterior" spec="CompoundDistribution">
+            <distribution id="prior" spec="CompoundDistribution">
+                <distribution id="YuleModel.t:benchmark" spec="beast.base.evolution.speciation.YuleModel" birthDiffRate="@birthRate.t:benchmark" tree="@Tree.t:benchmark"/>
+                <prior id="YuleBirthRatePrior.t:benchmark" name="distribution" x="@birthRate.t:benchmark">
+                    <Uniform id="Uniform.1" name="distr" upper="Infinity"/>
+                </prior>
+            </distribution>
+            <distribution id="likelihood" spec="CompoundDistribution" useThreads="true">
+                <distribution id="treeLikelihood.benchmark" spec="ThreadedTreeLikelihood" data="@benchmark" tree="@Tree.t:benchmark">
+                    <siteModel id="SiteModel.s:benchmark" spec="SiteModel">
+                        <parameter id="mutationRate.s:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.0" name="mutationRate">1.0</parameter>
+                        <parameter id="gammaShape.s:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.1" name="shape">1.0</parameter>
+                        <parameter id="proportionInvariant.s:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                        <substModel id="Standard_JC.s:benchmark" spec="JukesCantor" />
+                    </siteModel>
+                    <branchRateModel id="StrictClock.c:benchmark" spec="beast.base.evolution.branchratemodel.StrictClockModel">
+                        <parameter id="clockRate.c:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.0" name="clock.rate">1.0</parameter>
+                    </branchRateModel>
+                </distribution>
+            </distribution>
+        </distribution>
+        <operator id="YuleBirthRateScaler.t:benchmark" spec="kernel.BactrianScaleOperator" parameter="@birthRate.t:benchmark" upper="10.0" weight="3.0"/>
+        <operator id="YuleModelTreeRootScaler.t:benchmark" spec="kernel.BactrianScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:benchmark" upper="10.0" weight="3.0"/>
+        <operator id="YuleModelUniformOperator.t:benchmark" spec="kernel.BactrianNodeOperator" tree="@Tree.t:benchmark" weight="30.0"/>
+        <operator id="YuleModelSubtreeSlide.t:benchmark" spec="kernel.BactrianSubtreeSlide" tree="@Tree.t:benchmark" weight="15.0"/>
+        <operator id="YuleModelNarrow.t:benchmark" spec="Exchange" tree="@Tree.t:benchmark" weight="0.0"/>
+        <operator id="YuleModelWide.t:benchmark" spec="Exchange" isNarrow="false" tree="@Tree.t:benchmark" weight="3.0"/>
+        <operator id="YuleModelWilsonBalding.t:benchmark" spec="WilsonBalding" tree="@Tree.t:benchmark" weight="3.0"/>
+        <operator id="YuleModelBICEPSEpochTop.t:benchmark" spec="EpochFlexOperator" scaleFactor="0.1" tree="@Tree.t:benchmark" weight="2.0"/>
+        <operator id="YuleModelBICEPSEpochAll.t:benchmark" spec="EpochFlexOperator" fromOldestTipOnly="false" scaleFactor="0.1" tree="@Tree.t:benchmark" weight="2.0"/>
+        <operator id="YuleModelBICEPSTreeFlex.t:benchmark" spec="TreeStretchOperator" scaleFactor="0.01" tree="@Tree.t:benchmark" weight="2.0"/>
+        <logger id="tracelog" spec="Logger" fileName="$(filebase).log" logEvery="10000" model="@posterior" sanitiseHeaders="true" sort="smart">
+            <log idref="posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+            <log idref="treeLikelihood.benchmark"/>
+            <log id="TreeHeight.t:benchmark" spec="beast.base.evolution.tree.TreeStatLogger" tree="@Tree.t:benchmark"/>
+            <log idref="YuleModel.t:benchmark"/>
+            <log idref="birthRate.t:benchmark"/>
+        </logger>
+        <logger id="screenlog" spec="Logger" logEvery="10000">
+            <ESS spec='ESS' name='log' arg="@posterior"/>
+            <ESS spec='ESS' name='log' arg="@likelihood"/>
+        </logger>
+        <logger id="treelog.t:benchmark" spec="Logger" fileName="$(filebase)-$(tree).trees" logEvery="10000" mode="tree">
+            <log id="TreeWithMetaDataLogger.t:benchmark" spec="beast.base.evolution.TreeWithMetaDataLogger" tree="@Tree.t:benchmark"/>
+        </logger>
+        <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+    </run>
+
+</beast>

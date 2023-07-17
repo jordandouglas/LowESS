@@ -1,0 +1,262 @@
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=1, sdlog=2.5), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=2, sdlog=2.5), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=3, sdlog=5), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=3, sdlog=3), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=3, sdlog=2.5), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=3, sdlog=2), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=3, sdlog=2.5), format = "e", digits = 2)
+450/3368
+450/3368*15
+450/3368*10
+afdasf
+exp(1)
+4653.75/365
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-7, sdlog=0.25)
+exp(5.5)
+log(5.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=0.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=0.2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=0.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=0.3)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=0.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=0.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.5, sdlog=0.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=0.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.55, sdlog=0.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=0.25)
+4.6E-10 * 4 / 365
+log(5.041096e-12)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-26, sdlog=0.25)
+4.6E-10 * 4
+log(1.84e-09)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-20, sdlog=0.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-20, sdlog=1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-26, sdlog=1)
+4.6E-10 / 365 *4
+4.6E-10 * 365 / 4
+log(4.6E-10)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-21, sdlog=1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-21.5, sdlog=1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-20, sdlog=1)
+log(4.1975e-08)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=1.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=1.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=2)
+55624464+31926893+31559456+55562521
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=0.75)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=0.75)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=0.7)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=0.8)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=0.75)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=0.75)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=0.9)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=0.8)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=0.9)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=0.75)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.5, sdlog=0.75)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.5, sdlog=0.8)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.5, sdlog=0.9)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=0.9)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=1)
+log(5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.5, sdlog=2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=1.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-1, sdlog=.2)
+500000000/250000
+1.2/log(4)
+1.2/10
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-1, sdlog=.1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-2, sdlog=.2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-2, sdlog=.4)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-2, sdlog=.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-10, sdlog=2)
+log(0.01)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-5, sdlog=2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=2.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-7, sdlog=2.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-6.5, sdlog=2.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-7, sdlog=2.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=2.5)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=2.5), format = "e", digits = 2)
+3251.679/3600
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=.1), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=.2), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=.3), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=.5), format = "e", digits = 2)
+?ape::read.tree
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=.25), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=.3), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=2.5), format = "e", digits = 2)
+formatC(qbeta(p=c(0.025,0.5,0.975), shape1=1.0, shape2=50), format = "e", digits = 2)
+formatC(qbeta(p=c(0.025,0.5,0.975), shape1=0.5, shape2=50), format = "e", digits = 2)
+formatC(qbeta(p=c(0.025,0.5,0.975), shape1=0.1, shape2=50), format = "e", digits = 2)
+formatC(qbeta(p=c(0.025,0.5,0.975), shape1=0.2, shape2=50), format = "e", digits = 2)
+formatC(qbeta(p=c(0.025,0.5,0.975), shape1=0.15, shape2=50), format = "e", digits = 2)
+formatC(qbeta(p=c(0.025,0.5,0.975), shape1=0.1, shape2=50), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=1), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=.75), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=.5), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=.6), format = "e", digits = 2)
+16*15/2
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-0.25, sdlog=.5), format = "e", digits = 2)
+exp(-.25)
+3610/300
+3610/300*2.54
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=2.5), format = "e", digits = 2)
+formatC(qnorm(p=c(0.025,0.5,0.975), mean=-6, sd=2.5), format = "e", digits = 2)
+exp(-1.1)
+log（10）
+log(10)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.5), format = "e", digits = 2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.75)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.6)
+qexp(p=c(0.025,0.5,0.975), rate=10)
+exp(10)
+qexp(p=c(0.025,0.5,0.975), rate=200)
+qexp(p=c(0.025,0.5,0.975), rate=2.3)
+? qexp
+qexp(p=c(0.025,0.5,0.975), rate=1)
+qexp(p=c(0.025,0.5,0.975), rate=0.1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.6)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.7)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.8)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.6)
+formatC(qnorm(p=c(0.025,0.5,0.975), mean=-6, sd=2.5), format = "e", digits = 2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=2.5)
+exp(4.139938e-08)
+log(4.139938e-08)
+formatC(qnorm(p=c(0.025,0.5,0.975), mean=4.15-08, sd=2.5), format = "e", digits = 2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=2.5)
+qnorm(p=c(0.025,0.5,0.975), mean=4.139938e-08, sd=2.5)
+exp(-4.899910e+00)
+log(-4.899910e+00)
+exp(3.083117e-10)
+qnorm(p=c(0.025,0.5,0.975), mean=-17, sd=2.5)
+exp(-21.89991)
+qnorm(p=c(0.025,0.5,0.975), mean=-17, sd=2.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=2.5)
+qnorm(p=c(0.025,0.5,0.975), mean=-17, sd=0.6)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=0.6)
+log(4.1975E-08)
+log(10)
+log(100)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.3, sdlog=.6)
+qnorm(p=c(0.025,0.5,0.975), mean=2.3, sd=.6)
+exp(1.124022)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=0.6)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=0.5)
+exp(3.3)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=2.5)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=2.5), format = "e", digits = 2)
+qnorm(p=c(0.025,0.5,0.975), mean=-6, sd=2.5)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=-6, sdlog=0.5), format = "e", digits = 2)
+exp(3.32)
+exp(-13.78)
+exp(-15.25)
+exp(-18)
+exp(-16)
+exp(-16.8)
+exp(-14.5)
+exp(2)
+? qlnorm
+x=c(1,2)
+x[3]
+y=c()
+y[1]
+y[2]
+x[0]
+? product
+?? product
+?ifelse
+(625*4+486*6)/10
+4260/3000
+exp(3.3)
+log(1.2775)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=0.25, sdlog=0.5), format = "e", digits = 2)
+formatC(qlnorm(p=c(0.025,0.5,0.975), meanlog=0.24, sdlog=0.5), format = "e", digits = 2)
+1
+qlnorm(p=c(0.025,0.5,0.975), meanlog=0.25, sdlog=0.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=0.25, sdlog=0.75)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=0.25, sdlog=1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=1.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.6, sdlog=2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.8, sdlog=2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2, sdlog=2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2, sdlog=1.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2, sdlog=2)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.5, sdlog=2)
+exp(2.414)
+exp(2.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=2.5, sdlog=5.5)
+16075.628/3600
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1.7, sdlog=1.0)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=2.5)
+exp(qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=2.5))
+q=qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=2.5)
+exp(q)
+str(q)
+exp(q[1:3])
+exp(3.08e-10)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=2.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=.5)
+mean(c(3.43,1.33,0.565,2.60,1.74,1.76,1.03))
+c(3.43,1.33,0.565,2.60,1.74,1.76,1.03)/1.779286
+6.83/5.2479295
+3.43/5.2479295
+1.33/3.5956128
+6.834685 / 5.24793
+3.434980 / 5.24793
+log(10)
+log(1)
+log(0.1)
+exp(1.15)
+exp(2.79)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=0, sdlog=1.25)
+norm(p=c(0.025,0.5,0.975), mean=0, sd=1.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-1.5, sdlog=.5)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=.1)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=.05)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=.075)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=-17, sdlog=.09)
+qnorm(p=c(0.025,0.5,0.975), mean=0, sd=1.25)
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1, sdlog=1.25)
+7*24
+100/15
+1000/15
+qlnorm(p=c(0.025,0.5,0.975), meanlog=1, sdlog=1.25)
+exp(2.199)
+library(seqinr)
+?read.fasta
+setwd("~/WorkSpace/LowESS/Walter1")
+library(ape)#
+filePrefix="Walter1"#
+#
+# Set the path to the Nexus file#
+nexus_file <- paste0(filePrefix, ".nexus")#
+if (!file.exists(paste0(filePrefix, ".nexus"))){#
+stop(paste0("Cannot find ", filePrefix,".nexus\n"))#
+}#
+# Read the Nexus file#
+nexus_data <- ape:read.nexus(nexus_file)#
+#
+# Convert to Fasta format#
+fasta_data <- as.Fasta(nexus_data)
+nexus_data <- ape::read.nexus(nexus_file)
+nexus_data <- ape::read.nexus(nexus_file)
+nexus_data <- ape::read.nexus(nexus_file)
+nexus_file
+nexus_data <- ape::read.nexus(nexus_file)
+nexus_data <- ape::read.nexus(nexus_file)

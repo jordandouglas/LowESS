@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.base.evolution.alignment:beast.pkgmgmt:beast.base.core:beast.base.inference:beast.base.evolution.tree.coalescent:beast.pkgmgmt:beast.base.core:beast.base.inference.util:beast.evolution.nuc:beast.base.evolution.operator:beast.base.inference.operator:beast.base.evolution.sitemodel:beast.base.evolution.substitutionmodel:beast.base.evolution.likelihood" required="BEAST.base v2.7.5:Mascot v3.0.0:ORC v1.1.1:BEASTLabs v2.0.0" version="2.7">
+
+    <data
+id="benchmark"
+spec="Alignment"
+name="alignment">
+        <sequence id="seq_Abi" spec="Sequence" taxon="Abi" totalcount="4" value="gatggacatcaagaagccccagaggtcgaggaagctgaaactgtgtatggaagtccaccacaacaagaaaagttacttgtattgggtggaaatggatttg"/>
+        <sequence id="seq_Aco" spec="Sequence" taxon="Aco" totalcount="4" value="agtaagctagatgagccatttaaagttgaggaagcagaaacagtaaacgtgccgccacccccgtcagaaaaattgcttgttttgggcggaaatggatttg"/>
+        <sequence id="seq_Ame" spec="Sequence" taxon="Ame" totalcount="4" value="gatggtcacgaagaacccccaaaggttgaggaagctgaaactgtgcatgaaattcctccccatcaagataagttacttgttttgggtggaaacgggtttg"/>
+        <sequence id="seq_Ara" spec="Sequence" taxon="Ara" totalcount="4" value="gatggtcaccaagaatccccaaaggttgaagaagctgaaactgtgcacgaaagtccacctcatcaagataggttacttgtattgggtggaaacggatttg"/>
+        <sequence id="seq_Ath" spec="Sequence" taxon="Ath" totalcount="4" value="aacaaaattgatgagcccttcaatgtggaagaagctgagactgtacatgtgcctccacctcctactgagaagctgcttgtcctgggaggaaatggttttg"/>
+        <sequence id="seq_Atr" spec="Sequence" taxon="Atr" totalcount="4" value="gatcacattgaagaacccgtgaaagttgaagaagcagaaacagtaaatgttttgccacctccgtcagagaagctactagtgttgggtggaaatggatttg"/>
+        <sequence id="seq_Bdi" spec="Sequence" taxon="Bdi" totalcount="4" value="gggcgggtggacgagcctttcaaggtcgaggaggcagaacccgtcaaggtgcctccgccttctccggataagttgcttgtgctaggtggaagtggtttcg"/>
+        <sequence id="seq_Cep" spec="Sequence" taxon="Cep" totalcount="4" value="gatggtcatgaagaaccgcccaaggttgaggaagctgaaactgtgcatgaaagtccatcccatctagataagttacttgtattgggtggaaacggatttg"/>
+        <sequence id="seq_Cga" spec="Sequence" taxon="Cga" totalcount="4" value="aatactgtaggaaaggaaagtaaggattcaagtgcagacatgaaatcctctgaacccacggaacgaaacaagctgcttattttgggtggaagtggttttg"/>
+        <sequence id="seq_Cun" spec="Sequence" taxon="Cun" totalcount="4" value="gatggttacagagaaccaccaaaagttgaggaggctgaaactgtaaatgaaagtccatctcatcaagacaagttacttgtattaggcggaaatgggtttg"/>
+        <sequence id="seq_Cyc" spec="Sequence" taxon="Cyc" totalcount="4" value="gatgtgcagcaagcttccacaacagttgaggaagcagaaaccgttgatgtaaagccaccggaacatgataagttgcttgtattgggaggaaatggatttg"/>
+        <sequence id="seq_Eph" spec="Sequence" taxon="Eph" totalcount="4" value="gatggacagaaaggtacaccagaagttaatgaagctgagactgtttttacttcacctccccaaccagaaaagctgcttgtgctaggtggaagtggatttg"/>
+        <sequence id="seq_Fok" spec="Sequence" taxon="Fok" totalcount="4" value="gatggttacaaagaaccaccaaaagttgaggaagctgagactgtgcatgaaagtccatctcatcaagacaagttacttgtattaggtggaaatggttttg"/>
+        <sequence id="seq_Gin" spec="Sequence" taxon="Gin" totalcount="4" value="gatgcaaatcgagaatcgccaaaggttgaggaagcagaaactgtgtatgtaaagcaaccagatcaagataagttacttgtattgggtggaaatggattcg"/>
+        <sequence id="seq_Gma" spec="Sequence" taxon="Gma" totalcount="4" value="aacaaagttgatgggccattcaaagttgaagaagcagagactgtaaatgtgcctccactcccaacagaaaagttgcttgtgttgggagggaatgggtttg"/>
+        <sequence id="seq_Gne" spec="Sequence" taxon="Gne" totalcount="4" value="aatgcacataaagaagagtcggtaacagaagaagctgaaactctgtatgagcctcctccacagcaagagaagcttgtcgtgttaggtggaaatggctttg"/>
+        <sequence id="seq_Lja" spec="Sequence" taxon="Lja" totalcount="4" value="gacgcctcatcgtcaccatcatcgacggggagcgcagatacaaag---------cctgaggaaagaaacaagctgcttgtgttgggtggcagtgggtttg"/>
+        <sequence id="seq_Ltu" spec="Sequence" taxon="Ltu" totalcount="4" value="agtaaggtagatgaacccttcaaagttgaggaagcagagacagtaaacatgcctccacctccatcagagaagttacttgttttgggcggaaatgggtttg"/>
+        <sequence id="seq_Mac" spec="Sequence" taxon="Mac" totalcount="4" value="aatcgtgtagatgagcctcttaaagtggaggaagcagaaacggtaaaagcacctcctcctccatcagagaagctccttgtattgggtggtaatggatttg"/>
+        <sequence id="seq_Met" spec="Sequence" taxon="Met" totalcount="4" value="gatggttacaaagaaccaccaaaagttgaggaagctgagactgtgcatgaaattccatctcatcaagacaagttacttgtactaggcggaaatggttttg"/>
+    </data>
+
+    <map name="Uniform" >beast.base.inference.distribution.Uniform</map>
+
+    <map name="Exponential" >beast.base.inference.distribution.Exponential</map>
+
+    <map name="LogNormal" >beast.base.inference.distribution.LogNormalDistributionModel</map>
+
+    <map name="Normal" >beast.base.inference.distribution.Normal</map>
+
+    <map name="Beta" >beast.base.inference.distribution.Beta</map>
+
+    <map name="Gamma" >beast.base.inference.distribution.Gamma</map>
+
+    <map name="LaplaceDistribution" >beast.base.inference.distribution.LaplaceDistribution</map>
+
+    <map name="prior" >beast.base.inference.distribution.Prior</map>
+
+    <map name="InverseGamma" >beast.base.inference.distribution.InverseGamma</map>
+
+    <map name="OneOnX" >beast.base.inference.distribution.OneOnX</map>
+
+    <run id="mcmc" spec="MCMC" chainLength="10000000">
+        <state id="state" spec="State" storeEvery="5000">
+            <tree id="Tree.t:benchmark" spec="beast.base.evolution.tree.Tree" name="stateNode">
+                <taxonset id="TaxonSet.benchmark" spec="TaxonSet">
+                    <alignment idref="benchmark"/>
+                </taxonset>
+            </tree>
+            <parameter id="rateAC.s:benchmark" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="rateAG.s:benchmark" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="rateAT.s:benchmark" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="rateCG.s:benchmark" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="rateGT.s:benchmark" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="freqParameter.s:benchmark" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+            <parameter id="ORCsigma.c:benchmark" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.2</parameter>
+            <parameter id="ORCRates.c:benchmark" spec="parameter.RealParameter" dimension="38" lower="1.0E-100" name="stateNode">0.5</parameter>
+            <parameter id="NeConstant.t:benchmark" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+            <parameter id="migrationConstant.t:benchmark" spec="parameter.RealParameter" dimension="0" lower="0.0" name="stateNode">1.0</parameter>
+        </state>
+        <init id="RandomTree.t:benchmark" spec="RandomTree" estimate="false" initial="@Tree.t:benchmark" taxa="@benchmark">
+            <populationModel id="ConstantPopulation0.t:benchmark" spec="ConstantPopulation">
+                <parameter id="randomPopSize.t:benchmark" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+            </populationModel>
+        </init>
+        <distribution id="posterior" spec="CompoundDistribution">
+            <distribution id="prior" spec="CompoundDistribution">
+                <distribution id="Mascot.t:benchmark" spec="mascot.distribution.Mascot" tree="@Tree.t:benchmark">
+                    <dynamics id="Constant.t:benchmark" spec="mascot.dynamics.Constant" Ne="@NeConstant.t:benchmark" backwardsMigration="@migrationConstant.t:benchmark" dimension="1">
+                        <typeTrait id="typeTraitSet.t:benchmark" spec="mascot.util.InitializedTraitSet" traitname="type" value="Abi=NOT_SET,Aco=NOT_SET,Ame=NOT_SET,Ara=NOT_SET,Ath=NOT_SET,Atr=NOT_SET,Bdi=NOT_SET,Cep=NOT_SET,Cga=NOT_SET,Cun=NOT_SET,Cyc=NOT_SET,Eph=NOT_SET,Fok=NOT_SET,Gin=NOT_SET,Gma=NOT_SET,Gne=NOT_SET,Lja=NOT_SET,Ltu=NOT_SET,Mac=NOT_SET,Met=NOT_SET">
+                            <taxa id="TaxonSet.1" spec="TaxonSet" alignment="@benchmark"/>
+                        </typeTrait>
+                    </dynamics>
+                    <structuredTreeIntervals id="StructuredTreeIntervals.t:benchmark" spec="mascot.distribution.StructuredTreeIntervals" tree="@Tree.t:benchmark"/>
+                </distribution>
+                <prior id="NeConstantPrior.t:benchmark" name="distribution" x="@NeConstant.t:benchmark">
+                    <Exponential id="Exponential.1" name="distr">
+                        <mean id="Function$Constant.2" spec="Function$Constant" value="1.0"/>
+                    </Exponential>
+                </prior>
+                <prior id="ORCRatePriorDistribution.c:benchmark" name="distribution" x="@ORCRates.c:benchmark">
+                    <LogNormal id="LogNormalDistributionModel.0" S="@ORCsigma.c:benchmark" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter.17" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                    </LogNormal>
+                </prior>
+                <prior id="ORCsigmaPrior.c:benchmark" name="distribution" x="@ORCsigma.c:benchmark">
+                    <Gamma id="Gamma.7" name="distr">
+                        <parameter id="RealParameter.18" spec="parameter.RealParameter" estimate="false" name="alpha">5.0</parameter>
+                        <parameter id="RealParameter.19" spec="parameter.RealParameter" estimate="false" name="beta">0.05</parameter>
+                    </Gamma>
+                </prior>
+                <prior id="FrequenciesPrior.s:benchmark" name="distribution" x="@freqParameter.s:benchmark">
+                    <distr id="Dirichlet.0" spec="distribution.Dirichlet">
+                        <parameter id="RealParameter.15" spec="parameter.RealParameter" dimension="4" estimate="false" name="alpha">4.0 4.0 4.0 4.0</parameter>
+                    </distr>
+                </prior>
+                <prior id="migrationConstantPrior.t:benchmark" name="distribution" x="@migrationConstant.t:benchmark">
+                    <Exponential id="Exponential.2" name="distr">
+                        <mean id="Function$Constant.3" spec="Function$Constant" value="1.0"/>
+                    </Exponential>
+                </prior>
+                <prior id="RateACPrior.s:benchmark" name="distribution" x="@rateAC.s:benchmark">
+                    <Gamma id="Gamma.1" name="distr">
+                        <parameter id="RealParameter.3" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                        <parameter id="RealParameter.4" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                    </Gamma>
+                </prior>
+                <prior id="RateAGPrior.s:benchmark" name="distribution" x="@rateAG.s:benchmark">
+                    <Gamma id="Gamma.2" name="distr">
+                        <parameter id="RealParameter.5" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                        <parameter id="RealParameter.6" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
+                    </Gamma>
+                </prior>
+                <prior id="RateATPrior.s:benchmark" name="distribution" x="@rateAT.s:benchmark">
+                    <Gamma id="Gamma.3" name="distr">
+                        <parameter id="RealParameter.7" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                        <parameter id="RealParameter.8" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                    </Gamma>
+                </prior>
+                <prior id="RateCGPrior.s:benchmark" name="distribution" x="@rateCG.s:benchmark">
+                    <Gamma id="Gamma.4" name="distr">
+                        <parameter id="RealParameter.9" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                        <parameter id="RealParameter.10" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                    </Gamma>
+                </prior>
+                <prior id="RateGTPrior.s:benchmark" name="distribution" x="@rateGT.s:benchmark">
+                    <Gamma id="Gamma.6" name="distr">
+                        <parameter id="RealParameter.13" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                        <parameter id="RealParameter.14" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                    </Gamma>
+                </prior>
+            </distribution>
+            <distribution id="likelihood" spec="CompoundDistribution" useThreads="true">
+                <distribution id="treeLikelihood.benchmark" spec="ThreadedTreeLikelihood" data="@benchmark" tree="@Tree.t:benchmark">
+                    <siteModel id="SiteModel.s:benchmark" spec="SiteModel">
+                        <parameter id="mutationRate.s:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.0" name="mutationRate">1.0</parameter>
+                        <parameter id="gammaShape.s:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.1" name="shape">1.0</parameter>
+                        <parameter id="proportionInvariant.s:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                        <substModel id="gtr.s:benchmark" spec="GTR" rateAC="@rateAC.s:benchmark" rateAG="@rateAG.s:benchmark" rateAT="@rateAT.s:benchmark" rateCG="@rateCG.s:benchmark" rateGT="@rateGT.s:benchmark">
+                            <parameter id="rateCT.s:benchmark" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                            <frequencies id="estimatedFreqs.s:benchmark" spec="Frequencies" frequencies="@freqParameter.s:benchmark"/>
+                        </substModel>
+                    </siteModel>
+                    <branchRateModel id="OptimisedRelaxedClock.c:benchmark" spec="beast.base.evolution.branchratemodel.UCRelaxedClockModel" rates="@ORCRates.c:benchmark" tree="@Tree.t:benchmark">
+                        <LogNormal id="ORCLogNormalDistributionModel.c:benchmark" S="@ORCsigma.c:benchmark" meanInRealSpace="true" name="distr">
+                            <parameter id="RealParameter.16" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                        </LogNormal>
+                        <parameter id="ORCucldMean.c:benchmark" spec="parameter.RealParameter" estimate="false" name="clock.rate">1.0</parameter>
+                    </branchRateModel>
+                </distribution>
+            </distribution>
+        </distribution>
+        <operator id="RateACScaler.s:benchmark" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="rateAC.s:benchmark"/>
+            <operator id="AVMNOperator.benchmark" spec="kernel.AdaptableVarianceMultivariateNormalOperator" allowNonsense="true" beta="0.05" burnin="400" initial="800" weight="0.1">
+                <transformations id="AVMNSumTransform.benchmark" spec="operator.kernel.Transform$LogConstrainedSumTransform">
+                    <f idref="freqParameter.s:benchmark"/>
+                </transformations>
+                <transformations id="AVMNLogTransform.benchmark" spec="operator.kernel.Transform$LogTransform">
+                    <f idref="rateAC.s:benchmark"/>
+                    <f idref="rateAG.s:benchmark"/>
+                    <f idref="rateAT.s:benchmark"/>
+                    <f idref="rateCG.s:benchmark"/>
+                    <f idref="rateGT.s:benchmark"/>
+                </transformations>
+                <transformations id="AVMNNoTransform.benchmark" spec="operator.kernel.Transform$NoTransform">
+                    <f idref="Tree.t:benchmark"/>
+                </transformations>
+            </operator>
+            <operator id="RateACScalerX.s:benchmark" spec="kernel.BactrianScaleOperator" parameter="@rateAC.s:benchmark" scaleFactor="0.5" upper="10.0" weight="0.1"/>
+        </operator>
+        <operator id="RateAGScaler.s:benchmark" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="rateAG.s:benchmark"/>
+            <operator idref="AVMNOperator.benchmark"/>
+            <operator id="RateAGScalerX.s:benchmark" spec="kernel.BactrianScaleOperator" parameter="@rateAG.s:benchmark" scaleFactor="0.5" upper="10.0" weight="0.1"/>
+        </operator>
+        <operator id="RateATScaler.s:benchmark" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="rateAT.s:benchmark"/>
+            <operator idref="AVMNOperator.benchmark"/>
+            <operator id="RateATScalerX.s:benchmark" spec="kernel.BactrianScaleOperator" parameter="@rateAT.s:benchmark" scaleFactor="0.5" upper="10.0" weight="0.1"/>
+        </operator>
+        <operator id="RateCGScaler.s:benchmark" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="rateCG.s:benchmark"/>
+            <operator idref="AVMNOperator.benchmark"/>
+            <operator id="RateCGScalerX.s:benchmark" spec="kernel.BactrianScaleOperator" parameter="@rateCG.s:benchmark" scaleFactor="0.5" upper="10.0" weight="0.1"/>
+        </operator>
+        <operator id="RateGTScaler.s:benchmark" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="rateGT.s:benchmark"/>
+            <operator idref="AVMNOperator.benchmark"/>
+            <operator id="RateGTScalerX.s:benchmark" spec="kernel.BactrianScaleOperator" parameter="@rateGT.s:benchmark" scaleFactor="0.5" upper="10.0" weight="0.1"/>
+        </operator>
+        <operator id="FrequenciesExchanger.s:benchmark" spec="AdaptableOperatorSampler" weight="0.05">
+            <parameter idref="freqParameter.s:benchmark"/>
+            <operator idref="AVMNOperator.benchmark"/>
+            <operator id="FrequenciesExchangerX.s:benchmark" spec="operator.kernel.BactrianDeltaExchangeOperator" delta="0.01" weight="0.1">
+                <parameter idref="freqParameter.s:benchmark"/>
+            </operator>
+        </operator>
+        <operator id="ORCAdaptableOperatorSampler_sigma.c:benchmark" spec="AdaptableOperatorSampler" weight="3.0">
+            <parameter idref="ORCsigma.c:benchmark"/>
+            <operator id="ORCucldStdevScaler.c:benchmark" spec="orc.consoperators.UcldScalerOperator" distr="@ORCLogNormalDistributionModel.c:benchmark" rates="@ORCRates.c:benchmark" scaleFactor="0.5" stdev="@ORCsigma.c:benchmark" weight="1.0">
+                <kernel id="KernelDistribution$Bactrian.22" spec="operator.kernel.KernelDistribution$Bactrian"/>
+            </operator>
+            <operator id="ORCUcldStdevRandomWalk.c:benchmark" spec="operator.kernel.BactrianRandomWalkOperator" parameter="@ORCsigma.c:benchmark" scaleFactor="0.1" weight="1.0">
+                <kernelDistribution id="KernelDistribution$Bactrian.23" spec="operator.kernel.KernelDistribution$Bactrian"/>
+            </operator>
+            <operator id="ORCUcldStdevScale.c:benchmark" spec="kernel.BactrianScaleOperator" parameter="@ORCsigma.c:benchmark" scaleFactor="0.5" upper="10.0" weight="1.0">
+                <kernelDistribution id="KernelDistribution$Bactrian.24" spec="operator.kernel.KernelDistribution$Bactrian"/>
+            </operator>
+            <operator id="ORCSampleFromPriorOperator_sigma.c:benchmark" spec="orc.operators.SampleFromPriorOperator" parameter="@ORCsigma.c:benchmark" prior2="@ORCsigmaPrior.c:benchmark" weight="1.0"/>
+        </operator>
+        <operator id="ORCAdaptableOperatorSampler_rates_root.c:benchmark" spec="AdaptableOperatorSampler" weight="1.0">
+            <parameter idref="ORCRates.c:benchmark"/>
+            <tree idref="Tree.t:benchmark"/>
+            <operator id="ORCRootOperator1.c:benchmark" spec="orc.consoperators.SimpleDistance" clockModel="@OptimisedRelaxedClock.c:benchmark" rates="@ORCRates.c:benchmark" tree="@Tree.t:benchmark" twindowSize="0.005" weight="1.0">
+                <kernel id="KernelDistribution$Bactrian.25" spec="operator.kernel.KernelDistribution$Bactrian"/>
+            </operator>
+            <operator id="ORCRootOperator2.c:benchmark" spec="orc.consoperators.SmallPulley" clockModel="@OptimisedRelaxedClock.c:benchmark" dwindowSize="0.005" rates="@ORCRates.c:benchmark" tree="@Tree.t:benchmark" weight="1.0">
+                <kernel id="KernelDistribution$Bactrian.26" spec="operator.kernel.KernelDistribution$Bactrian"/>
+            </operator>
+        </operator>
+        <operator id="ORCAdaptableOperatorSampler_rates_internal.c:benchmark" spec="AdaptableOperatorSampler" weight="20.0">
+            <parameter idref="ORCRates.c:benchmark"/>
+            <tree idref="Tree.t:benchmark"/>
+            <operator id="ORCInternalnodesOperator.c:benchmark" spec="orc.consoperators.InConstantDistanceOperator" clockModel="@OptimisedRelaxedClock.c:benchmark" rates="@ORCRates.c:benchmark" tree="@Tree.t:benchmark" twindowSize="0.005" weight="1.0">
+                <kernel id="KernelDistribution$Bactrian.27" spec="operator.kernel.KernelDistribution$Bactrian"/>
+            </operator>
+            <operator id="ORCRatesRandomWalk.c:benchmark" spec="operator.kernel.BactrianRandomWalkOperator" parameter="@ORCRates.c:benchmark" scaleFactor="0.1" weight="1.0">
+                <kernelDistribution id="KernelDistribution$Bactrian.28" spec="operator.kernel.KernelDistribution$Bactrian"/>
+            </operator>
+            <operator id="ORCRatesScale.c:benchmark" spec="kernel.BactrianScaleOperator" parameter="@ORCRates.c:benchmark" scaleFactor="0.5" upper="10.0" weight="1.0">
+                <kernelDistribution id="KernelDistribution$Bactrian.29" spec="operator.kernel.KernelDistribution$Bactrian"/>
+            </operator>
+            <operator id="ORCSampleFromPriorOperator.rates.c:benchmark" spec="orc.operators.SampleFromPriorOperator" parameter="@ORCRates.c:benchmark" prior2="@ORCRatePriorDistribution.c:benchmark" weight="1.0"/>
+        </operator>
+        <operator id="ORCAdaptableOperatorSampler_NER.c:benchmark" spec="AdaptableOperatorSampler" weight="15.0">
+            <tree idref="Tree.t:benchmark"/>
+            <operator id="ORCNER_null.c:benchmark" spec="Exchange" tree="@Tree.t:benchmark" weight="0.0"/>
+            <operator id="ORCNER_dAE_dBE_dCE.c:benchmark" spec="orc.ner.NEROperator_dAE_dBE_dCE" rates="@ORCRates.c:benchmark" tree="@Tree.t:benchmark" weight="1.0"/>
+            <metric id="RNNIMetric.0" spec="beastlabs.evolution.tree.RNNIMetric" taxonset="@TaxonSet.benchmark"/>
+        </operator>
+        <operator id="MascotBICEPSEpochTop.t:benchmark" spec="EpochFlexOperator" scaleFactor="0.1" tree="@Tree.t:benchmark" weight="2.0"/>
+        <operator id="MascotBICEPSEpochAll.t:benchmark" spec="EpochFlexOperator" fromOldestTipOnly="false" scaleFactor="0.1" tree="@Tree.t:benchmark" weight="2.0"/>
+        <operator id="MascotBICEPSTreeFlex.t:benchmark" spec="TreeStretchOperator" scaleFactor="0.01" tree="@Tree.t:benchmark" weight="2.0"/>
+        <operator id="MascotTreeRootScaler.t:benchmark" spec="kernel.BactrianScaleOperator" rootOnly="true" scaleFactor="0.1" tree="@Tree.t:benchmark" upper="10.0" weight="3.0"/>
+        <operator id="MascotUniformOperator.t:benchmark" spec="kernel.BactrianNodeOperator" tree="@Tree.t:benchmark" weight="30.0"/>
+        <operator id="MascotSubtreeSlide.t:benchmark" spec="kernel.BactrianSubtreeSlide" tree="@Tree.t:benchmark" weight="15.0"/>
+        <operator id="MascotNarrow.t:benchmark" spec="Exchange" tree="@Tree.t:benchmark" weight="0.0"/>
+        <operator id="MascotWide.t:benchmark" spec="Exchange" isNarrow="false" tree="@Tree.t:benchmark" weight="3.0"/>
+        <operator id="MascotWilsonBalding.t:benchmark" spec="WilsonBalding" tree="@Tree.t:benchmark" weight="3.0"/>
+        <operator id="NeConstantScaler.t:benchmark" spec="ScaleOperator" parameter="@NeConstant.t:benchmark" weight="3.0"/>
+        <operator id="migrationConstantScaler.t:benchmark" spec="ScaleOperator" parameter="@migrationConstant.t:benchmark" weight="3.0"/>
+        <logger id="tracelog" spec="Logger" fileName="$(filebase).log" logEvery="10000" model="@posterior" sanitiseHeaders="true" sort="smart">
+            <log idref="posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+            <log idref="treeLikelihood.benchmark"/>
+            <log id="TreeHeight.t:benchmark" spec="beast.base.evolution.tree.TreeStatLogger" tree="@Tree.t:benchmark"/>
+            <log idref="rateAC.s:benchmark"/>
+            <log idref="rateAG.s:benchmark"/>
+            <log idref="rateAT.s:benchmark"/>
+            <log idref="rateCG.s:benchmark"/>
+            <log idref="rateGT.s:benchmark"/>
+            <log idref="freqParameter.s:benchmark"/>
+            <log idref="ORCsigma.c:benchmark"/>
+            <log id="ORCRatesStat.c:benchmark" spec="beast.base.evolution.RateStatistic" branchratemodel="@OptimisedRelaxedClock.c:benchmark" tree="@Tree.t:benchmark"/>
+            <log idref="Mascot.t:benchmark"/>
+            <log idref="Constant.t:benchmark"/>
+        </logger>
+        <logger id="screenlog" spec="Logger" logEvery="100000">
+            <log idref="posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+        </logger>
+        <logger id="treelog.t:benchmark" spec="Logger" fileName="$(filebase)-$(tree).trees" logEvery="10000" mode="tree">
+            <log id="TreeWithMetaDataLogger.t:benchmark" spec="beast.base.evolution.TreeWithMetaDataLogger" branchratemodel="@OptimisedRelaxedClock.c:benchmark" tree="@Tree.t:benchmark"/>
+        </logger>
+        <logger id="typedTreelogger.t:benchmark" spec="Logger" fileName="$(filebase).$(tree).trees" logEvery="1000" mode="tree">
+            <log id="structuredTreelog.t:benchmark" spec="mascot.logger.StructuredTreeLogger" mascot="@Mascot.t:benchmark"/>
+        </logger>
+        <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+    </run>
+
+</beast>
